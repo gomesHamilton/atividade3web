@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>Imagem dinâmica</h1>
+    </header>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
+    <picture>
+        <source media="(max-width: 750px" srcset="imagemG">
+        <source media="(max-width: 1050px" srcset="imagemG" type="image/png">
+        <img src="imagem/imagemG.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="áudio/Coldplay - The Scientist (Official Video).mp3" type="audio/mpeg">
+        <source src="áudio/Coldplay - The Scientist (Official Video).ogg" type="audio/ogg">
+        <source src="áudio/Coldplay - The Scientist (Official Video).wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio <a
+                href="áudio/Coldplay - The Scientist (Official Video).mp3">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+    </audio>
+</body>
+
+</html>
